@@ -1,2 +1,29 @@
-@import "tailwindcss";
 
+@layer base {
+  :root {
+    --color-primary: #32ade6;
+    --color-background: #ffffff;
+    --color-text: #000000;
+  }
+
+  .dark {
+    --color-primary: #32ade6;
+    --color-background: #1e1e1e;
+    --color-text: #ffffff;
+  }
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .bg-background {
+    background-color: var(--color-background);
+  }
+  .text-color {
+    color: var(--color-text);
+  }
+}
